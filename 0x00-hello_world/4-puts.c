@@ -1,10 +1,12 @@
 #include <stdio.h>
 /**
- * main - entry point
+ *  main - Prints quote
  *
- * Return: 0 after printing the function
+ *  Return: zero on success
+ *
  */
-int mai(void)
-{puts("\"Programming is like building a multilingual puzzle");
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
