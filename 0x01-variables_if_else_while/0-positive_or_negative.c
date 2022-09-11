@@ -1,22 +1,23 @@
+/*
+ * file: 0-positive_or_negative.c 
+ *
+ */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 
 /**
- * main - Positive or Negative - print sign of random number @void: Empty parameter list for main.
+ * main - rints a random number and states whether
+ * it is positive, negative, or zero.
  *
- * Description: this if/else statement delares the sign (positive or negative) of a random number.
- * It also states if the value is zero.
- *
- * Return: 0 for success
+ * Return: Always 0.
  */
 int main(void)
 {
-	/**
-	 * variable n has been declared
-	 * coding then assigns the random value.
-	 */
+
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -24,13 +25,13 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if (n == 0)
+	else if (n < 0)
 	{
-		printf("%d is zero\n", n);
+		printf("%d is negative\n", n);
 	}
 	else
 	{
-		printf("%d is negative\n", n);
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
