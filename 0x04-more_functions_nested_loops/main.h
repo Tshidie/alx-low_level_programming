@@ -1,5 +1,4 @@
-#ifnef MAIN_H
-#define MAIN_H
+#include <unistd.h>
 
 /**
 *main - header file for prototypes
