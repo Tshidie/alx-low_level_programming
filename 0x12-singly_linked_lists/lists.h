@@ -1,9 +1,7 @@
 #ifndef _LINKED_LIST_H_
 #define _LINKED_LIST_H_
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
 
 /**
  * struct list_s - singly linked list
@@ -29,4 +27,4 @@ void free_list(list_t *head)
 
 int _putchar(char c);
 
-#endif
+#endif /* LISTS_H */
